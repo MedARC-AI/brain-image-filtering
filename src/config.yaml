@@ -1,0 +1,19 @@
+# Model Config
+model_name: "ridge_CLIPbase"
+data_path: "/weka/proj-medarc/shared/mindeyev2_dataset"
+# if you are missing files download them from the following links:
+# https://huggingface.co/datasets/pscotti/mindeyev2
+# https://huggingface.co/datasets/pscotti/naturalscenesdataset
+
+clip_model_name: "ViT-B/32" # "ViT-L/14" | "ViT-B/32"
+
+batch_size: 128
+wandb_log: True
+ckpt_interval: 10
+ckpt_saving: False
+seed: 0
+
+max_lr: 3.0e-4
+num_epochs: 30
+
+temperature: 0.006
